@@ -29,5 +29,8 @@ namespace CafeteriaUnapec.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Campus> Campus { get; set; }
+        public DbSet<Empleados> Empleados { get; set; }
+        public DbSet<Cafeteria> Cafeteria { get; set; }
     }
 }
