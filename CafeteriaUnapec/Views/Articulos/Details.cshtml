@@ -1,0 +1,65 @@
+﻿@model CafeteriaUnapec.Models.Articulos
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles sobre registro de articulos</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidades_existentes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unidades_existentes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Volver", "Index")
+</p>

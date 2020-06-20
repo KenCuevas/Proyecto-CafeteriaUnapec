@@ -1,0 +1,57 @@
+﻿@model CafeteriaUnapec.Models.Usuarios
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles sobre registros de usuarios</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_usuarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_usuarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.limite_credito)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.limite_credito)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRegistro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Volver", "Index")
+</p>
