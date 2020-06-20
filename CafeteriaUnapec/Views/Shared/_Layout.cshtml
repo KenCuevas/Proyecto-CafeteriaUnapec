@@ -22,9 +22,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Proveedores")</li>
+                    <li>@Html.ActionLink("Cafeterias", "Index", "Cafeteria")</li>
+                    <li>@Html.ActionLink("Campus", "Index", "Campus")</li>
+                    <li>@Html.ActionLink("Articulos", "Index", "Articulos")</li>
+                    <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                    <li>@Html.ActionLink("Marcas", "Index", "Marcas")</li>
+                    <li>@Html.ActionLink("Proveedores", "Index", "Proveedores")</li>
+                    <li>@Html.ActionLink("Tipos de Usuarios", "Index", "UserTypes")</li>
+                    <li>@Html.ActionLink("Usuarios", "Index", "Usuarios")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -34,7 +39,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Cafeteria Unapec</p>
+            <p>&copy; @DateTime.Now.Year - Cafeteria Unapec by: Grupo 02: Jonathan Vilchez 2017-1580, Martires Valdez-2019-0373 y Kenny Cuevas 2018-2146</p><br />
         </footer>
     </div>
 

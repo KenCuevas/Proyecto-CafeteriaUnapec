@@ -12,7 +12,7 @@ namespace CafeteriaUnapec.Controllers
 {
     public class CampusController : Controller
     {
-        private CampusCafeteriaUnapec db = new CampusCafeteriaUnapec();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Campus
         public ActionResult Index()
