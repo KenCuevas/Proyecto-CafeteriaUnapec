@@ -22,17 +22,38 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Cafeterias", "Index", "Cafeteria")</li>
-                    <li>@Html.ActionLink("Campus", "Index", "Campus")</li>
-                    <li>@Html.ActionLink("Articulos", "Index", "Articulos")</li>
-                    <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
-                    <li>@Html.ActionLink("Marcas", "Index", "Marcas")</li>
-                    <li>@Html.ActionLink("Proveedores", "Index", "Proveedores")</li>
-                    <li>@Html.ActionLink("Tipos de Usuarios", "Index", "UserTypes")</li>
-                    <li>@Html.ActionLink("Usuarios", "Index", "Usuarios")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link off" href="#!">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                               href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Ingresar datos
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item"class="">@Html.ActionLink("Cafeterias", "Index", "Cafeteria")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Campus", "Index", "Campus")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Articulos", "Index", "Articulos")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Empleados", "Index", "Empleados")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Marcas", "Index", "Marcas")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Proveedores", "Index", "Proveedores")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Tipos de Usuarios", "Index", "UserTypes")</a>
+                                <br/>
+                                <a class="dropdown-item">@Html.ActionLink("Usuarios", "Index", "Usuarios")</a>
+                            </div>
+                        </li>
+                    </ul>
+                    </ul>
+
+                    @Html.Partial("_LoginPartial")
+</div>
         </div>
     </div>
     <div class="container body-content">
